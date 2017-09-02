@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HAP :: mobile part 4</title>
+
+        <script src="js/3rdparty/flocking/flocking-all.js"></script>
+        <script src="js/partFour.js"></script>
+        <script language="javascript" type="text/javascript" src="js/3rdparty/p5/p5.js"></script>
+        <!--script language="javascript" type="text/javascript" src="js/sketch.js"></script-->
+        <script src="js/3rdparty/convnet.js"></script>
+        <script src="js/3rdparty/dsp.js"></script>
+        <script language="javascript" type="text/javascript" src="js/testClassifier.js"></script>
+
+        <script>
+        $( document ).ready(function() {
+            console.log( "ready!" );
+            setInterval(function(){
+               $.get( "/time", function(data) {
+                    console.log( data );
+                    if (data.elapsed > data.part4) window.location = ("end.html");
+                });
+            }, 1000);
+        });
+        </script>
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='css/layout.css' rel='stylesheet'>
+
+    </head>
+
+    <body id="part4">
+        <!-- Your markup goes here -->
+
+        <script>
+            partFour.play();
+        </script>
+
+        <h1 class="header">
+        <div id="display"></div>
+        <div id="accelerometer"></div>
+        </h1>
+
+    </body>
+</html>

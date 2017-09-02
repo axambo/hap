@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HAP :: admin part 3</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='css/layout.css' rel='stylesheet'>
+        <script language="javascript" type="text/javascript" src="js/3rdparty/jquery-3.2.1.min.js"></script>
+        <script src="js/3rdparty/flocking/flocking-all.min.js"></script>
+        <script src="js/adminThree.js"></script>
+        <script>
+        $( document ).ready(function() {
+            console.log( "first admin page ready!" );
+            setInterval(function(){
+               $.get( "/time", function(data) {
+                    console.log( data );
+                    if (data.elapsed > data.part3) window.location = ("admin-4.html");
+                });
+            }, 1000);
+        });
+        </script>
+
+    </head>
+
+    <body>
+      <audio controls="controls" autoplay="false" onended="adminThree.play();">
+          <source src="snd/gongs/gong03.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+      </audio>
+    </body>
+</html>
