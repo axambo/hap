@@ -4,7 +4,7 @@ Copyright (c) 2017 [Anna Xambó](anna.xambo@gatech.edu) and [Gerard Roma](gerard
 
 ## Introduction
 
-This code has been presented as a performance piece at the Web Audio Conference 2017 in London. This code builds upon the framework [Handwaving](https://github.com/g-roma/handwaving) by Gerard Roma. Documentation of the performance can be found here: [http://crowdj.net/HAP](http://crowdj.net/HAP)
+This code has been presented as a performance piece at the Web Audio Conference 2017 in London. This code builds upon the framework [Handwaving](https://github.com/g-roma/handwaving) by Gerard Roma. Documentation of the performance can be found here: [http://crowdj.net/hap](http://crowdj.net/hap)
 
 ## Setup
 
